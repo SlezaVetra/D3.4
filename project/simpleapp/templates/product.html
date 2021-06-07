@@ -1,0 +1,12 @@
+<!-- Наследуемся от шаблона default.html, который мы создавали еще во времена flatpages -->
+{% extends 'flatpages/default.html' %}
+
+<!-- Название у нас будет prodects -->
+{% block title %}
+Products
+{% endblock title %}
+
+<!-- В контенте на странице мы вводим все товары -->
+{% block content %}
+<h1>{{ product }}</h1>
+{% endblock content %}
